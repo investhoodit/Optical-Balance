@@ -4,16 +4,24 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Optimal Balance Spa | Beauty, Wellness & Self-Care</title>
-  <meta name="description" content="Optimal Balance Spa in Mamelodi, Pretoria. Book massages, facials, body treatments, hands and feet treatments, and shop self-care products." />
+  <meta name="description" content="Optimal Balance Spa in Mamelodi, Pretoria. Book massages, facials, body treatments, hands & feet treatments, and shop premium self-care products." />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="topbar">
-    <a class="brand" href="#top"><span class="logo">B</span><span>Optimal Balance <em>Spa</em></span></a>
-    <button class="menu" id="menuBtn">☰</button>
-    <nav id="nav">
+  <header class="topbar" id="top">
+    <a class="brand" href="#top" aria-label="Optimal Balance Spa home">
+      <img src="assets/logo.jpeg" alt="Optimal Balance Spa logo" />
+      <span>Optimal Balance <em>Spa</em></span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+    <nav id="mainNav">
       <a href="#services">Services</a>
       <a href="#shop">Shop</a>
+      <a href="#gallery">Gallery</a>
       <a href="#packages">Packages</a>
       <a href="#corporate">Corporate Wellness</a>
       <a href="#booking">Book</a>
@@ -21,74 +29,218 @@
     </nav>
   </header>
 
-  <main id="top">
+  <main>
     <section class="hero">
       <div class="hero-copy">
         <p class="eyebrow">Wellness • Beauty • Self-care in Mamelodi, Pretoria</p>
         <h1>Where Beauty Meets Balance.</h1>
         <p class="lead">Relax, recharge and restore with professional spa treatments, personalised care and premium self-care products designed to help you feel beautiful, balanced and confident.</p>
-        <div class="actions">
+        <div class="hero-actions">
           <a class="btn primary" href="#booking">Book Appointment</a>
           <a class="btn ghost" href="#shop">Shop Products</a>
         </div>
-        <div class="trust"><span>Professional care</span><span>Clean & safe space</span><span>Mobile spa services</span></div>
+        <div class="trust-row">
+          <span>Professional care</span><span>Clean & safe space</span><span>Mobile spa services</span>
+        </div>
       </div>
       <div class="hero-card">
-        <div class="b-mark">B</div>
-        <h2>Find Your Balance</h2>
-        <p>Experience wellness and rejuvenation with Optimal Balance Mobile Spa.</p>
-        <strong>Book via WhatsApp: 069 532 6338</strong>
+        <img src="assets/client-facial.jpg" alt="Client enjoying Optimal Balance Spa facial care" />
+        <div class="floating-card">
+          <strong>Find your balance</strong>
+          <small>Book via WhatsApp: 069 532 6338</small>
+        </div>
       </div>
     </section>
 
     <section class="intro section-pad">
-      <div><p class="eyebrow">Our story</p><h2>A sanctuary for beauty, wellness and confidence.</h2></div>
+      <div>
+        <p class="eyebrow">Our story</p>
+        <h2>A sanctuary for beauty, wellness and confidence.</h2>
+      </div>
       <p>Optimal Balance Spa is a trusted beauty and wellness destination based in Mamelodi, Pretoria. We offer professional treatments tailored to each client, creating a calm and welcoming experience that supports relaxation, confidence and overall wellbeing.</p>
     </section>
 
-    <section class="gallery">
-      <div><strong>Relax</strong><span>Massages</span></div>
-      <div><strong>Restore</strong><span>Facials</span></div>
-      <div><strong>Rejuvenate</strong><span>Hands & Feet</span></div>
+    <section class="image-strip" aria-label="Optimal Balance Spa featured gallery">
+      <img src="assets/massage-treatment.jpg" alt="Massage treatment by Optimal Balance Spa" />
+      <img src="assets/group-spa-babyshower.jpg" alt="Group spa day and mommy-to-be celebration" />
+      <img src="assets/prep-products.jpg" alt="Spa product preparation and treatment setup" />
+      <img src="assets/prod-spray.jpg" alt="Optimal Balance products on display" />
+    </section>
+
+    <section class="section-pad feature-grid-section">
+      <div class="section-head">
+        <p class="eyebrow">What we offer</p>
+        <h2>Premium wellness experiences.</h2>
+        <p>From individual treatments to group spa experiences and retail self-care products, Optimal Balance Spa brings beauty and wellness together in one professional brand.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-box">
+          <img src="assets/consultation.jpg" alt="Client consultation at Optimal Balance Spa" />
+          <div><h3>Consultation & Care</h3><p>Warm, professional consultations and a personalised customer experience from start to finish.</p></div>
+        </article>
+        <article class="feature-box">
+          <img src="assets/treatment-table.jpg" alt="Prepared massage treatment room" />
+          <div><h3>Mobile Spa Treatments</h3><p>Convenient, relaxing spa treatments brought to you with a calm and elegant setup.</p></div>
+        </article>
+        <article class="feature-box">
+          <img src="assets/group-spa-babyshower.jpg" alt="Group spa party experience" />
+          <div><h3>Group Spa Experiences</h3><p>Ideal for birthdays, bridal events, baby showers, wellness days and intimate celebrations.</p></div>
+        </article>
+        <article class="feature-box">
+          <img src="assets/gift-bag.jpg" alt="Optimal Balance Spa gift products" />
+          <div><h3>Retail Self-Care Products</h3><p>Shop curated self-care essentials, body care products and gift-ready wellness bundles.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-pad promo-banner">
+      <div class="promo-copy">
+        <p class="eyebrow">Featured treatment</p>
+        <h2>Radiant Facial Treatment</h2>
+        <p>Deeply cleanse, hydrate and refresh your skin while enjoying a soothing spa experience that leaves you radiant and confident.</p>
+        <div class="promo-price">R350</div>
+        <a class="btn primary" href="#booking">Book this facial</a>
+      </div>
+      <img src="assets/promo-radiant-facial.jpg" alt="Radiant facial treatment promotion" />
     </section>
 
     <section class="section-pad" id="services">
-      <div class="section-head"><p class="eyebrow">Treatments</p><h2>Book your spa service</h2><p>Choose a treatment and add it to your booking cart. Final confirmation is completed via WhatsApp.</p></div>
+      <div class="section-head">
+        <p class="eyebrow">Treatments</p>
+        <h2>Book your spa service</h2>
+        <p>Choose a treatment and add it to your booking cart. Final confirmation is completed via WhatsApp.</p>
+      </div>
       <div class="tabs" id="categoryTabs"></div>
       <div class="grid cards" id="serviceGrid"></div>
     </section>
 
-    <section class="section-pad shop" id="shop">
-      <div class="section-head"><p class="eyebrow">E-commerce shop</p><h2>Self-care products</h2><p>Shop Optimal Balance products and complete your order enquiry directly on WhatsApp.</p></div>
+    <section class="section-pad shop-section" id="shop">
+      <div class="section-head">
+        <p class="eyebrow">E-commerce shop</p>
+        <h2>Self-care products</h2>
+        <p>Shop Optimal Balance products and complete your order enquiry directly on WhatsApp.</p>
+      </div>
       <div class="grid cards" id="productGrid"></div>
     </section>
 
+    <section class="section-pad gallery-section" id="gallery">
+      <div class="section-head">
+        <p class="eyebrow">Gallery</p>
+        <h2>Real Optimal Balance moments.</h2>
+        <p>A visual look at our spa setup, client experiences, treatments and branded product range.</p>
+      </div>
+      <div class="masonry-gallery">
+        <img src="assets/folded-towels.jpg" alt="Prepared treatment bed" />
+        <img src="assets/washing-hands.jpg" alt="Spa therapist preparing with hand wash" />
+        <img src="assets/room-setup.jpg" alt="Optimal Balance Spa room setup" />
+        <img src="assets/foot-soak-kit.jpg" alt="Foot soak spa kit" />
+        <img src="assets/consultation-desk.jpg" alt="Client consultation at desk" />
+        <img src="assets/sponge-facial.jpg" alt="Facial treatment process" />
+      </div>
+    </section>
+
     <section class="section-pad packages" id="packages">
-      <div class="section-head light"><p class="eyebrow">Packages</p><h2>Curated wellness experiences</h2><p>Perfect for birthdays, mommy-to-be celebrations, friend days, staff wellness and special occasions.</p></div>
+      <div class="section-head light">
+        <p class="eyebrow">Packages</p>
+        <h2>Curated wellness experiences</h2>
+        <p>Perfect for birthdays, mommy-to-be celebrations, friend days, staff wellness and special occasions.</p>
+      </div>
       <div class="grid three">
-        <article class="package-card"><h3>Restore Package</h3><p>Back, Neck & Shoulder Massage + Foot Soak</p><strong>From R450</strong><button class="btn small" data-package="Restore Package - Back, Neck & Shoulder Massage + Foot Soak">Add to cart</button></article>
-        <article class="package-card"><h3>Glow Package</h3><p>Deep Cleansing Facial + Hydrating Facial Scrub product enquiry</p><strong>From R650</strong><button class="btn small" data-package="Glow Package - Deep Cleansing Facial + Product Enquiry">Add to cart</button></article>
-        <article class="package-card"><h3>Group Spa Day</h3><p>Mobile spa setup for ladies' day, mommy-to-be, corporate and private events.</p><strong>Custom Quote</strong><button class="btn small" data-package="Group Spa Day - Custom Quote">Request quote</button></article>
+        <article class="package-card">
+          <img src="assets/foot-soak-muscle-gel.jpg" alt="Foot care and recovery package" />
+          <h3>Restore Package</h3>
+          <p>Back, Neck &amp; Shoulder Massage + Foot Soak</p>
+          <strong>From R450</strong>
+          <button class="btn small" data-package="Restore Package - Back, Neck & Shoulder Massage + Foot Soak">Add to cart</button>
+        </article>
+        <article class="package-card">
+          <img src="assets/castor-scrub-product.jpg" alt="Facial care product package" />
+          <h3>Glow Package</h3>
+          <p>Deep Cleansing Facial + Hydrating Facial Scrub product enquiry</p>
+          <strong>From R650</strong>
+          <button class="btn small" data-package="Glow Package - Deep Cleansing Facial + product enquiry">Add to cart</button>
+        </article>
+        <article class="package-card">
+          <img src="assets/group-spa-babyshower.jpg" alt="Group spa day package" />
+          <h3>Group Spa Day</h3>
+          <p>Mobile spa setup for ladies' day, mommy-to-be, corporate and private events.</p>
+          <strong>Custom Quote</strong>
+          <button class="btn small" data-package="Group Spa Day - Custom Quote">Request quote</button>
+        </article>
       </div>
     </section>
 
     <section class="section-pad split" id="corporate">
-      <div><p class="eyebrow">Corporate & community wellness</p><h2>Wellness programmes for teams, events and partners.</h2><p>Optimal Balance Spa supports corporate wellness days, women’s empowerment initiatives, skills development, community wellness campaigns and brand collaborations.</p><ul class="check"><li>Employee wellness experiences</li><li>Women’s empowerment and confidence sessions</li><li>Community wellness projects</li><li>Brand activation and joint marketing opportunities</li></ul></div>
-      <div class="feature-card"><h3>Professional care with a personal touch</h3><p>Wellness is essential, not a luxury. Every client deserves exceptional care.</p></div>
+      <div>
+        <p class="eyebrow">Corporate & community wellness</p>
+        <h2>Wellness programmes for teams, events and partners.</h2>
+        <p>Optimal Balance Spa supports corporate wellness days, women’s empowerment initiatives, skills development, community wellness campaigns and brand collaborations.</p>
+        <ul class="check-list">
+          <li>Employee wellness experiences</li>
+          <li>Women’s empowerment and confidence sessions</li>
+          <li>Community development wellness projects</li>
+          <li>Brand activation and joint marketing opportunities</li>
+        </ul>
+      </div>
+      <img src="assets/consultation-desk.jpg" alt="Optimal Balance Spa consultation and admin support" />
+    </section>
+
+    <section class="section-pad values">
+      <div class="section-head">
+        <p class="eyebrow">Why clients choose us</p>
+        <h2>Professional care with a personal touch.</h2>
+      </div>
+      <div class="grid five">
+        <div><strong>Excellence</strong><span>High-quality care in every treatment.</span></div>
+        <div><strong>Wellness</strong><span>Body, mind and spirit care.</span></div>
+        <div><strong>Integrity</strong><span>Honest and transparent service.</span></div>
+        <div><strong>Client-centered</strong><span>Every client valued and cared for.</span></div>
+        <div><strong>Empowerment</strong><span>Confidence, renewal and community impact.</span></div>
+      </div>
     </section>
 
     <section class="section-pad booking" id="booking">
       <div class="booking-panel">
-        <div><p class="eyebrow">Book now</p><h2>Ready to relax?</h2><p>Send us your preferred treatment, date, time and location. We will confirm availability and final payment details.</p><div class="contact"><a href="tel:+27695326338">069 532 6338</a><a href="https://instagram.com/OptimalBalance" target="_blank" rel="noreferrer">@OptimalBalance</a></div></div>
-        <form id="bookingForm"><label>Full name <input required name="name" placeholder="Your name" /></label><label>Phone number <input required name="phone" placeholder="Your contact number" /></label><label>Preferred date <input required name="date" type="date" /></label><label>Preferred time <input required name="time" type="time" /></label><label>Location / address <input name="location" placeholder="Mamelodi / Pretoria / mobile visit address" /></label><label>Message <textarea name="message" rows="4" placeholder="Tell us what you would like to book"></textarea></label><button class="btn primary" type="submit">Send Booking on WhatsApp</button></form>
+        <div>
+          <p class="eyebrow">Book now</p>
+          <h2>Ready to relax?</h2>
+          <p>Send us your preferred treatment, date, time and location. We will confirm availability and final payment details.</p>
+          <div class="contact-lines">
+            <a href="tel:+27695326338">069 532 6338</a>
+            <a href="https://instagram.com/OptimalBalance" target="_blank" rel="noreferrer">@OptimalBalance</a>
+          </div>
+        </div>
+        <form id="bookingForm">
+          <label>Full name <input required name="name" placeholder="Your name" /></label>
+          <label>Phone number <input required name="phone" placeholder="Your contact number" /></label>
+          <label>Preferred date <input required name="date" type="date" /></label>
+          <label>Preferred time <input required name="time" type="time" /></label>
+          <label>Location / address <input name="location" placeholder="Mamelodi / Pretoria / mobile visit address" /></label>
+          <label>Message <textarea name="message" rows="4" placeholder="Tell us what you would like to book"></textarea></label>
+          <button class="btn primary" type="submit">Send Booking on WhatsApp</button>
+        </form>
       </div>
     </section>
   </main>
 
-  <aside class="cart-drawer" id="cartDrawer"><div class="cart-head"><h2>Your cart</h2><button id="closeCart">×</button></div><div id="cartItems" class="cart-items"></div><div class="cart-total"><span>Estimated total</span><strong id="cartTotal">R0</strong></div><button class="btn primary full" id="checkoutBtn">Checkout via WhatsApp</button><small>Prices are estimates. Final booking, travel costs and availability are confirmed by Optimal Balance Spa.</small></aside>
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="cart-head">
+      <h2>Your cart</h2>
+      <button id="closeCart" aria-label="Close cart">×</button>
+    </div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-total"><span>Estimated total</span><strong id="cartTotal">R0</strong></div>
+    <button class="btn primary full" id="checkoutBtn">Checkout via WhatsApp</button>
+    <small>Prices are estimates. Final booking, travel costs and availability are confirmed by Optimal Balance Spa.</small>
+  </aside>
   <div class="overlay" id="overlay"></div>
 
-  <footer><span class="logo">B</span><p><strong>Optimal Balance Spa</strong><br/>Beauty • Wellness • Self-Care</p><p>Mamelodi, Pretoria · 069 532 6338 · @OptimalBalance</p></footer>
+  <footer>
+    <img src="assets/logo.jpeg" alt="Optimal Balance Spa logo" />
+    <p><strong>Optimal Balance Spa</strong><br/>Beauty • Wellness • Self-Care</p>
+    <p>Mamelodi, Pretoria · 069 532 6338 · @OptimalBalance</p>
+  </footer>
+
   <script src="app.js"></script>
 </body>
 </html>
