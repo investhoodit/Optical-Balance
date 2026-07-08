@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Optimal Balance Spa | Beauty, Wellness & Self-Care</title>
+  <meta name="description" content="Optimal Balance Spa in Mamelodi, Pretoria. Book massages, facials, body treatments, hands and feet treatments, and shop self-care products." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top"><span class="logo">B</span><span>Optimal Balance <em>Spa</em></span></a>
+    <button class="menu" id="menuBtn">☰</button>
+    <nav id="nav">
+      <a href="#services">Services</a>
+      <a href="#shop">Shop</a>
+      <a href="#packages">Packages</a>
+      <a href="#corporate">Corporate Wellness</a>
+      <a href="#booking">Book</a>
+      <button class="cart-pill" id="openCart">Cart <span id="cartCount">0</span></button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Wellness • Beauty • Self-care in Mamelodi, Pretoria</p>
+        <h1>Where Beauty Meets Balance.</h1>
+        <p class="lead">Relax, recharge and restore with professional spa treatments, personalised care and premium self-care products designed to help you feel beautiful, balanced and confident.</p>
+        <div class="actions">
+          <a class="btn primary" href="#booking">Book Appointment</a>
+          <a class="btn ghost" href="#shop">Shop Products</a>
+        </div>
+        <div class="trust"><span>Professional care</span><span>Clean & safe space</span><span>Mobile spa services</span></div>
+      </div>
+      <div class="hero-card">
+        <div class="b-mark">B</div>
+        <h2>Find Your Balance</h2>
+        <p>Experience wellness and rejuvenation with Optimal Balance Mobile Spa.</p>
+        <strong>Book via WhatsApp: 069 532 6338</strong>
+      </div>
+    </section>
+
+    <section class="intro section-pad">
+      <div><p class="eyebrow">Our story</p><h2>A sanctuary for beauty, wellness and confidence.</h2></div>
+      <p>Optimal Balance Spa is a trusted beauty and wellness destination based in Mamelodi, Pretoria. We offer professional treatments tailored to each client, creating a calm and welcoming experience that supports relaxation, confidence and overall wellbeing.</p>
+    </section>
+
+    <section class="gallery">
+      <div><strong>Relax</strong><span>Massages</span></div>
+      <div><strong>Restore</strong><span>Facials</span></div>
+      <div><strong>Rejuvenate</strong><span>Hands & Feet</span></div>
+    </section>
+
+    <section class="section-pad" id="services">
+      <div class="section-head"><p class="eyebrow">Treatments</p><h2>Book your spa service</h2><p>Choose a treatment and add it to your booking cart. Final confirmation is completed via WhatsApp.</p></div>
+      <div class="tabs" id="categoryTabs"></div>
+      <div class="grid cards" id="serviceGrid"></div>
+    </section>
+
+    <section class="section-pad shop" id="shop">
+      <div class="section-head"><p class="eyebrow">E-commerce shop</p><h2>Self-care products</h2><p>Shop Optimal Balance products and complete your order enquiry directly on WhatsApp.</p></div>
+      <div class="grid cards" id="productGrid"></div>
+    </section>
+
+    <section class="section-pad packages" id="packages">
+      <div class="section-head light"><p class="eyebrow">Packages</p><h2>Curated wellness experiences</h2><p>Perfect for birthdays, mommy-to-be celebrations, friend days, staff wellness and special occasions.</p></div>
+      <div class="grid three">
+        <article class="package-card"><h3>Restore Package</h3><p>Back, Neck & Shoulder Massage + Foot Soak</p><strong>From R450</strong><button class="btn small" data-package="Restore Package - Back, Neck & Shoulder Massage + Foot Soak">Add to cart</button></article>
+        <article class="package-card"><h3>Glow Package</h3><p>Deep Cleansing Facial + Hydrating Facial Scrub product enquiry</p><strong>From R650</strong><button class="btn small" data-package="Glow Package - Deep Cleansing Facial + Product Enquiry">Add to cart</button></article>
+        <article class="package-card"><h3>Group Spa Day</h3><p>Mobile spa setup for ladies' day, mommy-to-be, corporate and private events.</p><strong>Custom Quote</strong><button class="btn small" data-package="Group Spa Day - Custom Quote">Request quote</button></article>
+      </div>
+    </section>
+
+    <section class="section-pad split" id="corporate">
+      <div><p class="eyebrow">Corporate & community wellness</p><h2>Wellness programmes for teams, events and partners.</h2><p>Optimal Balance Spa supports corporate wellness days, women’s empowerment initiatives, skills development, community wellness campaigns and brand collaborations.</p><ul class="check"><li>Employee wellness experiences</li><li>Women’s empowerment and confidence sessions</li><li>Community wellness projects</li><li>Brand activation and joint marketing opportunities</li></ul></div>
+      <div class="feature-card"><h3>Professional care with a personal touch</h3><p>Wellness is essential, not a luxury. Every client deserves exceptional care.</p></div>
+    </section>
+
+    <section class="section-pad booking" id="booking">
+      <div class="booking-panel">
+        <div><p class="eyebrow">Book now</p><h2>Ready to relax?</h2><p>Send us your preferred treatment, date, time and location. We will confirm availability and final payment details.</p><div class="contact"><a href="tel:+27695326338">069 532 6338</a><a href="https://instagram.com/OptimalBalance" target="_blank" rel="noreferrer">@OptimalBalance</a></div></div>
+        <form id="bookingForm"><label>Full name <input required name="name" placeholder="Your name" /></label><label>Phone number <input required name="phone" placeholder="Your contact number" /></label><label>Preferred date <input required name="date" type="date" /></label><label>Preferred time <input required name="time" type="time" /></label><label>Location / address <input name="location" placeholder="Mamelodi / Pretoria / mobile visit address" /></label><label>Message <textarea name="message" rows="4" placeholder="Tell us what you would like to book"></textarea></label><button class="btn primary" type="submit">Send Booking on WhatsApp</button></form>
+      </div>
+    </section>
+  </main>
+
+  <aside class="cart-drawer" id="cartDrawer"><div class="cart-head"><h2>Your cart</h2><button id="closeCart">×</button></div><div id="cartItems" class="cart-items"></div><div class="cart-total"><span>Estimated total</span><strong id="cartTotal">R0</strong></div><button class="btn primary full" id="checkoutBtn">Checkout via WhatsApp</button><small>Prices are estimates. Final booking, travel costs and availability are confirmed by Optimal Balance Spa.</small></aside>
+  <div class="overlay" id="overlay"></div>
+
+  <footer><span class="logo">B</span><p><strong>Optimal Balance Spa</strong><br/>Beauty • Wellness • Self-Care</p><p>Mamelodi, Pretoria · 069 532 6338 · @OptimalBalance</p></footer>
+  <script src="app.js"></script>
+</body>
+</html>
